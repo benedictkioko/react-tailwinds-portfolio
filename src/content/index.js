@@ -1,8 +1,8 @@
 export default {
   nav: {
-    logo: 'CC',
+    logo: 'BK',
     links: [
-      { text: 'Work', to: 'mywork' },
+      { text: 'Experience', to: 'mywork' },
       { text: 'Contact', to: 'mycontact' },
     ],
   },
