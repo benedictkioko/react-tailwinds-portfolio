@@ -664,6 +664,8 @@ module.exports = {
       '500': '500ms',
       '700': '700ms',
       '1000': '1000ms',
+      '2000': '2000ms',
+      '3000': '3000ms',
     },
     transitionDelay: {
       '75': '75ms',
@@ -674,6 +676,7 @@ module.exports = {
       '500': '500ms',
       '700': '700ms',
       '1000': '1000ms',
+
     },
     animation: {
       none: 'none',
