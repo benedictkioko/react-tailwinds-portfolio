@@ -4,7 +4,7 @@ import content from '../content'
 
 export default function Stack() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center font-dosis">
+        <div className="min-h-screen flex flex-col items-center justify-center font-dosis" id="stack">
                 <h1 className="text-5xl font-bold">Stacks I Use</h1>
                 <div className="flex flex-wrap justify-center mt-10">
                     {content.stack.tech.map((tech, index)=>{
