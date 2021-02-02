@@ -17,7 +17,7 @@ export default {
       2000,
       'Security Consultant. 📹',
       2000,
-      'Web developer',
+      'ML developer',
       2000,
     ],
     btnText: 'Discover More',

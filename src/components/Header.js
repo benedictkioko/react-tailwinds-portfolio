@@ -12,12 +12,12 @@ const Header = () => {
                 background: '#091c29',
             }}
             >
-            <div>
-                <div>
+            <div className="flex flex-col md:flex-row-reverse items-center justify-between">
+                <div className="w-full md:w-2/5">
                     <LazyLoadImage src={content.header.img} effect="blur" placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}/>
                 </div>
-                <div className="text-white font-dosis text-center">
-                    <h2 className="text-3xl font-bold">
+                <div className="text-white font-dosis text-center md:text-left">
+                    <h2 className="text-3xl md:text-5xl font-bold">
                         {content.header.text[0]}
                         <br/>
                         {content.header.text[1]}
@@ -29,7 +29,7 @@ const Header = () => {
                             className="inline-block"
                         />
                     </h1>
-                    <button className="bg-indigo-500 px-10 py-2 text-xl uppercase mt-10 rounded-lg">{content.header.btnText}</button>
+                    <button className="animate-float bg-indigo-500 px-10 py-2 text-xl uppercase mt-10 rounded-lg">{content.header.btnText}</button>
                 </div>
             </div>
         </div>
