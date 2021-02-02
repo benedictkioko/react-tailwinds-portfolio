@@ -1,10 +1,16 @@
 
-import React from 'react'
+import React, { useState, useEffect }from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import content from '../content'
 import Typical from 'react-typical'
 
 const Header = () => {
+
+    const [animated, setAnimated] = useState(false);
+    useEffect(() => {
+        setAnimated(true);
+    }, []);
+
     return (
         <div
             className="min-h-screen flex items-center justify-center" 
@@ -17,7 +23,7 @@ const Header = () => {
                     <LazyLoadImage src={content.header.img} effect="blur" placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}/>
                 </div>
                 <div className="text-white font-dosis text-center md:text-left">
-                    <h2 className="text-3xl md:text-5xl font-bold">
+                    <h2 className={`${animated?"":"translate-y-10 opacity-0"} transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}>
                         {content.header.text[0]}
                         <br/>
                         {content.header.text[1]}
